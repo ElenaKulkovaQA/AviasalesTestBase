@@ -1,8 +1,12 @@
 package tests;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.devtools.v115.page.model.FrameAttached;
 import pages.CheckResultMainPage;
 import pages.MainPageVacancies;
 
@@ -10,7 +14,10 @@ public class VisibleComponentsPageTest extends TestBaseAvia {
     MainPageVacancies mainPage = new MainPageVacancies();
     CheckResultMainPage result = new CheckResultMainPage();
 
-    @Tag("regression")
+    @Tags({
+            @Tag("regression"),
+            @Tag("smoke")
+    })
     @DisplayName("Проверка видимости основных элементов страницы с вакансиями")
     @Test
     void successVisibleMainComponentsTest(){
@@ -37,7 +44,7 @@ result
     }
 
     @Tag("negativTest")
-    @Tag("regression")
+    @Tag("smoke")
     @DisplayName("Проверка текста при отсутствии результатов поиска")
     @Test
     void CheckTextWhenNotSearchResultsTest(){
