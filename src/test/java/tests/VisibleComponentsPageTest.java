@@ -43,8 +43,10 @@ result
         .getVacancyName().equals(mainPage.setSearch());
     }
 
-    @Tag("negativTest")
-    @Tag("smoke")
+    @Tags({
+            @Tag("regression"),
+            @Tag("smoke"),
+            @Tag("negativ") })
     @DisplayName("Проверка текста при отсутствии результатов поиска")
     @Test
     void CheckTextWhenNotSearchResultsTest(){
