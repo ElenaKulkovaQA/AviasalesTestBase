@@ -47,7 +47,7 @@ result
             @Tag("regression"),
             @Tag("smoke"),
             @Tag("negativ") })
-    @DisplayName("Проверка текста при отсутствии результатов поиска")
+    @DisplayName("Проверка текста при отсутствии результатов поиска по вакансии")
     @Test
     void CheckTextWhenNotSearchResultsTest(){
         mainPage
