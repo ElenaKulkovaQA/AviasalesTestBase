@@ -24,6 +24,7 @@ public class VisibleComponentsPageTest extends TestBaseAvia {
         mainPage
                 .openPage()
                 .getContent()
+                .setAboutUs()
                 .getCatImage()
                 .getTexst1()
                 .getTexst2()
@@ -37,10 +38,10 @@ public class VisibleComponentsPageTest extends TestBaseAvia {
         mainPage
                 .openPage()
                 .setSearch();
-result
-        .getContainer()
-        .getNoSuitable()
-        .getVacancyName().equals(mainPage.setSearch());
+        result
+                .getContainer()
+                .getNoSuitable()
+                .getVacancyName().equals(mainPage.setSearch());
     }
 
     @Tags({

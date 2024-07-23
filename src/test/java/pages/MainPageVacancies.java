@@ -15,7 +15,8 @@ public class MainPageVacancies {
             catImage = $(".vacancies_header__cat"),
             texst1 = $(".vacancies_header__title_1"),
             texst2 = $(".vacancies_header__title_2"),
-            searchInput = $(".input--search");
+            searchInput = $(".input--search"),
+            aboutUs = $(".switch__link");
 
 
     public MainPageVacancies openPage() {
@@ -45,14 +46,20 @@ public class MainPageVacancies {
         texst2.shouldBe(text("самые\n" + "вакансии"));
         return this;
     }
+
     public MainPageVacancies setSearch() {
         searchInput.setValue("QA Engineer").pressEnter();
         return this;
     }
+
     public MainPageVacancies setNotSearch() {
         searchInput.setValue("Cats").pressEnter();
         return this;
     }
 
+    public MainPageVacancies setAboutUs() {
+       aboutUs.shouldHave(text("О КОМПАНИИ"));
+        return this;
+    }
 
 }
