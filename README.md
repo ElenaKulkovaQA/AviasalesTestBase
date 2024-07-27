@@ -37,7 +37,7 @@ ___
 Так же реализована интеграция с `Allure TestOps` и `Jira`.
 ___
 ### Сборка в Jenkins  
-<img src="src/test/resources/сборка Jenkins.png" height="700" width="1300"/>
+<img src="src/test/resources/сборка Jenkins.png" height="500" width="1000"/>
 
 
 
