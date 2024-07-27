@@ -39,7 +39,7 @@ ___
 
 ___
 ### Запуск тестов из терминала
-`gradle :clean :test -Dtype=${TAG} -Dremote_url=${REMOTE_URL} -Dbrowser_type=${BROWSER_TYPE}  -Dbrowser_version=${BROWSER_VERSION} -Dbrowser_size=${BROWSER_SIZE} --info  
+`gradle :clean :test -Dtype=${TAG} -Dremote_url=${REMOTE_URL} -Dbrowser_type=${BROWSER_TYPE}  -Dbrowser_version=${BROWSER_VERSION} -Dbrowser_size=${BROWSER_SIZE} --info` 
 ___
 ### Пример Allure-отчета  
 <img src="src/test/resources/аллюр репорт.png" height="280" width="480"/>  
@@ -65,6 +65,6 @@ ___
 ___  
 ### Видео примера запуска тестов в Selenoid   
 <img src="src/test/resources/Гиф теста поиска вакансии Авиасейлс.gif" height="280" width="480"/>  
-___
+
 
 
