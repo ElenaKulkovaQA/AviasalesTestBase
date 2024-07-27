@@ -15,11 +15,14 @@ public class TestBaseAvia {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
+
         Configuration.baseUrl = "https://www.aviasales.ru";
         Configuration.pageLoadStrategy = "eager";
         Configuration.holdBrowserOpen = false;
-        //Configuration.remote = System.getProperty("remote","https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.browserSize = System.getProperty("browser_size","1920x1080");
+        Configuration.browser = System.getProperty("browser_type", "chrome");
+        Configuration.browserVersion = System.getProperty("browser_version","121.0");
+        Configuration.remote = System.getProperty("remote_url");
 //Добавляем видео в отчет
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -28,7 +31,6 @@ public class TestBaseAvia {
         ));
 
         Configuration.browserCapabilities = capabilities;
-
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
