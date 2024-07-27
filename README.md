@@ -37,7 +37,7 @@ ___
 Так же реализована интеграция с `Allure TestOps` и `Jira`.
 ___
 ### Сборка в Jenkins  
-<img src="src/test/resources/сборка Jenkins.png" height="500" width="1000"/>
+<img src="src/test/resources/сборка Jenkins.png" height="500" width="9000"/>  
 
 
 
@@ -46,25 +46,25 @@ ___
 `gradle :clean :test -Dtype=${TAG} -Dremote_url=${REMOTE_URL} -Dbrowser_type=${BROWSER_TYPE}  -Dbrowser_version=${BROWSER_VERSION} -Dbrowser_size=${BROWSER_SIZE} --info` 
 ___
 ### Пример Allure-отчета  
-<img src="src/test/resources/аллюр репорт.png" height="900" width="1500"/>  
+<img src="src/test/resources/аллюр репорт.png" height="500" width="9000"/>  
 
 #### Allure- отчет состоит из:  
 Шаги теста  
-<img src="src/test/resources/шаги теста в аллюр-отчете.png" height="900" width="1500"/>  
+<img src="src/test/resources/шаги теста в аллюр-отчете.png" height="500" width="9000"/>    
 Скриншот страницы на последнем шаге  
-<img src="src/test/resources/скриншот с последнего шага теста.png" height="900" width="1500"/>  
+<img src="src/test/resources/скриншот с последнего шага теста.png" height="500" width="9000"/>    
 Page Source  
 Логи браузерной консоли  
 Видео выполнения автотеста  
 
 ___
 ### Интеграция с Allure TestOps  
-<img src="src/test/resources/интеграция с аллюр тестопс.png" height="900" width="1500"/>    
+<img src="src/test/resources/интеграция с аллюр тестопс.png" height="500" width="9000"/>     
 
 ___
 ### Интеграция с Jira  
 
-<img src="src/test/resources/интеграция с Jira.png" height="900" width="1500"/>  
+<img src="src/test/resources/интеграция с Jira.png" height="500" width="9000"/>    
 
 ___  
 ### Видео примера запуска тестов в Selenoid   
