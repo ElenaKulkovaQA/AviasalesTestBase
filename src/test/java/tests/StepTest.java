@@ -5,10 +5,11 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import pages.MainPageVacancies;
-import static io.qameta.allure.Allure.step;
-import org.junit.jupiter.api.*;
 import pages.CheckResultMainPage;
+import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
 public class StepTest extends TestBaseAvia {
 
@@ -26,10 +27,9 @@ public class StepTest extends TestBaseAvia {
     })
     @DisplayName("Проверка видимости основных элементов страницы с вакансиями")
     @Test
-
     void visibleComponentsTest() {
 
-        step("Открываем главную страницу и ожидаем появление баннера", () -> {
+        step("Открываем главную страницу и ожидаем появление контента", () -> {
             mainPage
                     .openPage()
                     .getContent();
@@ -56,7 +56,42 @@ public class StepTest extends TestBaseAvia {
                     .setAboutUs();
         })
         ;
+    }
 
+    @Tags({
+            @Tag("smoke"),
+            @Tag("step")
+    })
+    @DisplayName("Проверка соответствия результатов поиска страницы с вакансиями")
+    @Test
+    void resultSearchVacanciesTest() {
+
+        step("Открываем главную страницу и ожидаем появление контента", () -> {
+            mainPage
+                    .openPage()
+                    .getContent();
+        })
+        ;
+        step("Заполняем поле поиска вакансии", () -> {
+            mainPage
+                    .setSearch();
+        })
+        ;
+        step("Проверяем, что контейнер с вакансиями виден", () -> {
+            results
+                    .getContainer();
+        })
+        ;
+        step("Проверяем, что результат поиска по вакансии соответствует имени вакансии в запросе", () -> {
+            results
+                    .getVacancyName().equals(mainPage.setSearch());
+        })
+        ;
+        step("Проверяем, что в футере имеется текст _\"Отправь нам резюме на почту \" ", () -> {
+            results
+                    .getNoSuitable();
+        });
     }
 }
+
 
