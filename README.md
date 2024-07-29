@@ -36,14 +36,14 @@ ___
 Для удаленного запуска реализована джоба в `Jenkins` с формированием `Allure`-отчета.
 Так же реализована интеграция с `Allure TestOps` и `Jira`.
 ___
-### Сборка в Jenkins  
+### [Сборка в Jenkins](https://jenkins.autotests.cloud/job/AviasalesVacanciesTest/7/)   
 <img src="src/test/resources/сборка Jenkins.png" height="500" width="9000"/>  
 
 ___
 ### Запуск тестов из терминала  
 `gradle :clean :test -Dtype=${TAG} -Dremote_url=${REMOTE_URL} -Dbrowser_type=${BROWSER_TYPE}  -Dbrowser_version=${BROWSER_VERSION} -Dbrowser_size=${BROWSER_SIZE} --info`
 ___
-### Пример Allure-отчета  
+### [Пример Allure-отчета](https://jenkins.autotests.cloud/job/AviasalesVacanciesTest/7/allure/)    
 <img src="src/test/resources/аллюр репорт.png" height="500" width="9000"/>  
 
 #### Allure- отчет состоит из:  

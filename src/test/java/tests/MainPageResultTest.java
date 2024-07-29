@@ -1,8 +1,5 @@
 package tests;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Tag;
@@ -11,15 +8,10 @@ import pages.MainPageVacancies;
 import pages.CheckResultMainPage;
 import static com.codeborne.selenide.logevents.SelenideLogger.step;
 
-public class StepTest extends TestBaseAvia {
+public class MainPageResultTest extends TestBaseAvia {
 
     private MainPageVacancies mainPage = new MainPageVacancies();
     private CheckResultMainPage results = new CheckResultMainPage();
-
-    @BeforeEach
-    void setUp() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
 
     @Tags({
             @Tag("smoke"),
@@ -51,6 +43,22 @@ public class StepTest extends TestBaseAvia {
                     .getTexst2();
         })
         ;
+    }
+
+
+    @Tags({
+            @Tag("smoke"),
+            @Tag("step")
+    })
+    @DisplayName("Проверка, что в хедере страницы есть блок О Компании")
+    @Test void resultAboutAsTest(){
+
+        step("Открываем главную страницу", () -> {
+            mainPage
+                    .openPage();
+
+        })
+        ;
         step("Проверяем, что в хэдере есть текст _О КОМПАНИИ_", () -> {
             mainPage
                     .setAboutUs();
@@ -58,18 +66,18 @@ public class StepTest extends TestBaseAvia {
         ;
     }
 
+
     @Tags({
             @Tag("smoke"),
-            @Tag("step")
+            @Tag("regression")
     })
     @DisplayName("Проверка соответствия результатов поиска страницы с вакансиями")
     @Test
     void resultSearchVacanciesTest() {
 
-        step("Открываем главную страницу и ожидаем появление контента", () -> {
+        step("Открываем главную страницу", () -> {
             mainPage
-                    .openPage()
-                    .getContent();
+                    .openPage();
         })
         ;
         step("Заполняем поле поиска вакансии", () -> {
@@ -92,6 +100,43 @@ public class StepTest extends TestBaseAvia {
                     .getNoSuitable();
         });
     }
+
+    @Tags({
+            @Tag("regression"),
+            @Tag("smoke"),
+            @Tag("negative") })
+    @DisplayName("Проверка текста при отсутствии результатов поиска по вакансии")
+    @Test
+    void сheckTextWhenNotSearchResultsTest(){
+        step("Открываем главную страницу", () -> {
+            mainPage
+                    .openPage();
+
+        })
+        ;
+        step("Заполняем поле поиска вакансии несуществующей вакансией", () -> {
+            mainPage
+                .setNotSearch();
+        })
+        ;
+
+        step("Проверяем, что контейнер с вакансиями виден", () -> {
+            results
+                    .getContainer();
+        })
+        ;
+        step("Проверяем, что в футере имеется текст _\"Отправь нам резюме на почту \"", () -> {
+            results
+                .getNoSuitable();
+        })
+        ;
+        step("Проверяем, что имеется текст \"Нет подходящих вакансий\"", () -> {
+            results
+                .getSearchNotresult();
+        })
+        ;
+    }
 }
+
 
 
