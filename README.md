@@ -1,4 +1,4 @@
-# **Проект по автоматизации тестовых сценариев для сайта компании AVIASALES**  
+# **Проект по автоматизации тестовых сценариев для сайта компании [AVIASALES](https://www.aviasales.ru/)**  
 > Aviasales - компания, которая помогает сравнить билеты
 и купить самый дешёвый
 Бесплатно    
@@ -60,7 +60,7 @@ ___
 <img src="src/test/resources/интеграция с аллюр тестопс.png" height="500" width="9000"/>     
 
 ___
-### Интеграция с Jira  
+### [Интеграция с Jira](https://jira.autotests.cloud/browse/HOMEWORK-1300)  
 <img src="src/test/resources/интеграция с Jira.png" height="500" width="9000"/>    
 
 ___  
