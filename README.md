@@ -15,17 +15,17 @@
 ___
 ### Стек технологий
 <p align="left">
-<a href="https://www.java.com/ru/" target="_blank"></a><img align="center"src="src/test/resources/java-original.svg" height="40" width="40"/>   
-<a href="https://www.jetbrains.com/idea/"></a><img align="center"src="src/test/resources/intellij-original.svg" height="40" width="40"/>  
-<a href="https://www.jenkins.io/"></a><img align="center"src="src/test/resources/jenkins-original.svg" height="40" width="40"/>  
-<a href="https://www.atlassian.com/ru/software/jira"></a><img align="center"src="src/test/resources/jira-original.svg" height="40" width="40"/>  
-<a href="https://github.com/"></a><img align="center"src="src/test/resources/github-original-wordmark.svg" height="40" width="40"/>  
-<a href="https://gradle.org/"></a><img align="center"src="src/test/resources/gradle-original.svg" height="40" width="40"/>  
-<a href="https://junit.org/junit5/"></a><img align="center"src="src/test/resources/junit-original.svg" height="40" width="40"/>
-<a href="https://selenide.org/"></a><img align="center"src="src/test/resources/Selenide.svg" height="40" width="40"/>  
-<a href="https://aerokube.com/selenoid/"></a><img align="center"src="src/test/resources/Selenoid.svg" height="40" width="40"/>  
-<a href="https://allurereport.org/"></a><img align="center"src="src/test/resources/Allure.svg" height="40" width="40"/>
-<a href="https://qameta.io/"></a><img align="center"src="src/test/resources/AllureTestops.svg" height="40" width="40"/>
+<a href="https://www.java.com/ru/" target="_blank"><img align="center"src="src/test/resources/java-original.svg" height="40" width="40" /></a>      
+<a href="https://www.jetbrains.com/idea/" target="_blank"><img align="center"src="src/test/resources/intellij-original.svg" height="40" width="40"/></a> 
+<a href="https://www.jenkins.io/" target="_blank"><img align="center"src="src/test/resources/jenkins-original.svg" height="40" width="40"/></a>   
+<a href="https://www.atlassian.com/ru/software/jira" target="_blank"><img align="center"src="src/test/resources/jira-original.svg" height="40" width="40"/></a>   
+<a href="https://github.com/" target="_blank"><img align="center"src="src/test/resources/github-original-wordmark.svg" height="40" width="40"/></a>   
+<a href="https://gradle.org/" target="_blank"><img align="center"src="src/test/resources/gradle-original.svg" height="40" width="40"/></a>   
+<a href="https://junit.org/junit5/" target="_blank"><img align="center"src="src/test/resources/junit-original.svg" height="40" width="40"/></a> 
+<a href="https://selenide.org/" target="_blank"><img align="center"src="src/test/resources/Selenide.svg" height="40" width="40"/></a>   
+<a href="https://aerokube.com/selenoid/" target="_blank"><img align="center"src="src/test/resources/Selenoid.svg" height="40" width="40"/></a>   
+<a href="https://allurereport.org/" target="_blank"><img align="center"src="src/test/resources/Allure.svg" height="40" width="40"/></a> 
+<a href="https://qameta.io/" target="_blank"><img align="center"src="src/test/resources/AllureTestops.svg" height="40" width="40"/></a> 
 </p>  
 
 ___  
