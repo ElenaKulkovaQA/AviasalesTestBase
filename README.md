@@ -15,17 +15,17 @@
 ___
 ### Стек технологий
 <p align="left">
-<img align="center"src="src/test/resources/java-original.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/intellij-original.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/jenkins-original.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/jira-original.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/github-original-wordmark.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/gradle-original.svg" height="40" width="40"/>  
-<img align="center"src="src/test/resources/junit-original.svg" height="40" width="40"/>
-<img align="center"src="src/test/resources/Selenide.svg" height="40" width="40"/>
-<img align="center"src="src/test/resources/Selenoid.svg" height="40" width="40"/>
-<img align="center"src="src/test/resources/Allure.svg" height="40" width="40"/>
-<img align="center"src="src/test/resources/AllureTestops.svg" height="40" width="40"/>
+<a href="https://www.java.com/ru/"><img align="center"src="src/test/resources/java-original.svg" height="40" width="40"/>   
+<a href="https://www.jetbrains.com/idea/"><img align="center"src="src/test/resources/intellij-original.svg" height="40" width="40"/>  
+<a href="https://www.jenkins.io/"><img align="center"src="src/test/resources/jenkins-original.svg" height="40" width="40"/>  
+<a href="https://www.atlassian.com/ru/software/jira"><img align="center"src="src/test/resources/jira-original.svg" height="40" width="40"/>  
+<a href="https://github.com/"><img align="center"src="src/test/resources/github-original-wordmark.svg" height="40" width="40"/>  
+<a href="https://gradle.org/"><img align="center"src="src/test/resources/gradle-original.svg" height="40" width="40"/>  
+<a href="https://junit.org/junit5/"><img align="center"src="src/test/resources/junit-original.svg" height="40" width="40"/>
+<a href="https://selenide.org/"><img align="center"src="src/test/resources/Selenide.svg" height="40" width="40"/>  
+<a href="https://aerokube.com/selenoid/"><img align="center"src="src/test/resources/Selenoid.svg" height="40" width="40"/>  
+<a href="https://allurereport.org/"><img align="center"src="src/test/resources/Allure.svg" height="40" width="40"/>
+<a href="https://qameta.io/"><img align="center"src="src/test/resources/AllureTestops.svg" height="40" width="40"/>
 </p>  
 
 ___  
