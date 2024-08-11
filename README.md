@@ -15,7 +15,7 @@
 ___
 ### Стек технологий
 <p align="left">
-<a href="https://www.java.com/ru/"><img align="center"src="src/test/resources/java-original.svg" height="40" width="40"/>   
+<a href="https://www.java.com/ru/" target="_blank"><img align="center"src="src/test/resources/java-original.svg" height="40" width="40"/>   
 <a href="https://www.jetbrains.com/idea/"><img align="center"src="src/test/resources/intellij-original.svg" height="40" width="40"/>  
 <a href="https://www.jenkins.io/"><img align="center"src="src/test/resources/jenkins-original.svg" height="40" width="40"/>  
 <a href="https://www.atlassian.com/ru/software/jira"><img align="center"src="src/test/resources/jira-original.svg" height="40" width="40"/>  
